@@ -425,13 +425,13 @@
   },
   {
    "offset": "0x3683",
-   "text": "卡碧尼Mk2／普露兹机",
-   "payload_hex": "e801e7cee896efa7eedeef5fefafe838e858e856e7e400"
+   "text": "卡碧尼(普露兹机)",
+   "payload_hex": "e801e7cee896ef5ce838e858e856e7e4efbd0000000000"
   },
   {
    "offset": "0x369A",
-   "text": "卡碧尼Mk2／普露机",
-   "payload_hex": "e801e7cee896efa7eedeef5fefafe838e858e7e400"
+   "text": "卡碧尼(普露机)",
+   "payload_hex": "e801e7cee896ef5ce838e858e7e4efbd0000000000"
   },
   {
    "offset": "0x36AF",
@@ -445,23 +445,8 @@
   },
   {
    "offset": "0x36D3",
-   "text": "翔翼型强袭／解除",
-   "payload_hex": "eef9ec35e977e8ade9aee06be89de97400"
-  },
-  {
-   "offset": "0x36E4",
-   "text": "MC高达（半毁）",
-   "payload_hex": "07e00ae812ef2b7deadee97c7e00000000"
-  },
-  {
-   "offset": "0x36F5",
-   "text": "赛克艾恩／兵装1",
-   "payload_hex": "ebf3e7d5e8d6e7eee06bef93e98feff700"
-  },
-  {
-   "offset": "0x3706",
-   "text": "赛克艾恩／兵装2",
-   "payload_hex": "ebf3e7d5e8d6e7eee06bef93e98fef5f00"
+   "text": "翔翼型强袭(解除)",
+   "payload_hex": "eef9ec35e977e8ade9aeef5ce89de974efbd00"
   },
   {
    "offset": "0x3717",
@@ -525,8 +510,8 @@
   },
   {
    "offset": "0x37EB",
-   "text": "迪斯帕达／法夫纳",
-   "payload_hex": "ea11e7c8eb01ef2be06be84ee830e882"
+   "text": "嫣红强袭(解除)",
+   "payload_hex": "eeffe9e3e8ade9aeef5ce89de974efbd00"
   },
   {
    "offset": "0x37FC",
@@ -835,8 +820,8 @@
   },
   {
    "offset": "0x3A16",
-   "text": "弗雷斯贝尔格",
-   "payload_hex": "e9b5e8afe7c8e857e7e1e824"
+   "text": "自由(SEED)",
+   "payload_hex": "efb5e8a6ef5cf2c7efbd00"
   },
   {
    "offset": "0x3A23",
@@ -854,9 +839,9 @@
    "payload_hex": "ef09efdb"
   },
   {
-   "offset": "0x3A3C",
-   "text": "自由／SEED",
-   "payload_hex": "efb5e8a6e06b08e00be00b05"
+   "offset": "0x3A3A",
+   "text": "ν高达(强化)",
+   "payload_hex": "e8fee812ef2bef5ce8ade9a5efbd00"
   },
   {
    "offset": "0x3A49",
@@ -1010,8 +995,8 @@
   },
   {
    "offset": "0x3B7C",
-   "text": "双联高速防盾炮",
-   "payload_hex": "eabcef2ee812e9dae968eb63e95a"
+   "text": "Z高达(GD)",
+   "payload_hex": "e01de812ef2bef5ce00d05efbd00"
   },
   {
    "offset": "0x3B8B",
@@ -1185,8 +1170,8 @@
   },
   {
    "offset": "0x3CB1",
-   "text": "丘贝雷MkⅡ／普露机",
-   "payload_hex": "ec46e857e8af07eedeeee1e06be838e858e7e4"
+   "text": "赛克艾恩(兵装2)",
+   "payload_hex": "ebf3e7d5e8d6e7eeef5cef93e98fef5fefbd00"
   },
   {
    "offset": "0x3CC5",
@@ -1395,8 +1380,8 @@
   },
   {
    "offset": "0x3E16",
-   "text": "嫣红强袭／解除",
-   "payload_hex": "eeffe9e3e8ade9aee06be89de974"
+   "text": "卡碧尼(哈曼机)",
+   "payload_hex": "e801e7cee896ef5ce7e8e874e7e4efbd00"
   },
   {
    "offset": "0x3E28",
@@ -2189,14 +2174,9 @@
    "payload_hex": "e902ee5fefafef9eed1bea42e824"
   },
   {
-   "offset": "0x4482",
-   "text": "自由／SEED",
-   "payload_hex": "efb5e8a6e06bf2c7000000000000"
-  },
-  {
    "offset": "0x4491",
-   "text": "里·加兹／BWS",
-   "payload_hex": "ef31ef4be854e856efafef61effcef9e"
+   "text": "∀高达(∀99)",
+   "payload_hex": "effee812ef2bef5ceffeeca4eca4efbd00"
   },
   {
    "offset": "0x44A2",
@@ -2214,14 +2194,14 @@
    "payload_hex": "ec46e857e8afefafe838e858e7e4"
   },
   {
-   "offset": "0x44D3",
-   "text": "∀高达（∀99）",
-   "payload_hex": "effee812ef2b7deffeeca4eca47e0000"
+   "offset": "0x44CD",
+   "text": "西斯库德(形态1)",
+   "payload_hex": "e7f8e7c8e9b3e82cef5cec67e994eff7efbd00"
   },
   {
    "offset": "0x44E4",
-   "text": "∀高达（月光蝶）",
-   "payload_hex": "effee812ef2b7de850e83dea037e0000"
+   "text": "MC高达(半毁)",
+   "payload_hex": "07e00ae812ef2bef5ceadee97cefbd00"
   },
   {
    "offset": "0x44F5",
@@ -2234,11 +2214,6 @@
    "payload_hex": "eed1eed4e998eff7eca5ef72ee66e80d"
   },
   {
-   "offset": "0x4511",
-   "text": "Z高达（GD）",
-   "payload_hex": "e01de812ef2b7de00d057e000000"
-  },
-  {
    "offset": "0x4520",
    "text": "W高达零式",
    "payload_hex": "e01ae812ef2beb74ea26"
@@ -2249,9 +2224,9 @@
    "payload_hex": "e83de895e00a"
   },
   {
-   "offset": "0x4533",
-   "text": "W高达零式／H",
-   "payload_hex": "e01ae812ef2beb74ea26efafeed2"
+   "offset": "0x4532",
+   "text": "灵格斯(BWS)",
+   "payload_hex": "eaebe824e7c8ef5ce009e01a08efbd00"
   },
   {
    "offset": "0x4542",
@@ -2295,8 +2270,8 @@
   },
   {
    "offset": "0x459B",
-   "text": "海盗X1／强化",
-   "payload_hex": "e91be9f3eed9eff7efafe8ade9a5"
+   "text": "卡碧尼(强化)",
+   "payload_hex": "e801e7cee896ef5ce8ade9a5efbd00"
   },
   {
    "offset": "0x45AA",
@@ -2305,8 +2280,8 @@
   },
   {
    "offset": "0x45B9",
-   "text": "海盗X1改／H",
-   "payload_hex": "e91be9f3eed9eff7e9f0e06be00e"
+   "text": "斯摩(金色型)",
+   "payload_hex": "e7c8ee35ef5ce902e89fe977efbd00"
   },
   {
    "offset": "0x45C8",
@@ -2315,13 +2290,13 @@
   },
   {
    "offset": "0x45CF",
-   "text": "精神感应高达Mk2",
-   "payload_hex": "e98de9aae87de873e812ef2befa7eedeef5f"
+   "text": "精神力高达MKⅡ",
+   "payload_hex": "e98de9aaefb0e812ef2befa7ed1beee10000"
   },
   {
    "offset": "0x45E2",
-   "text": "西斯库德／形态1",
-   "payload_hex": "e7f8e7c8e9b3e82ce06bec67e994eff7"
+   "text": "∀高达(月光蝶)",
+   "payload_hex": "effee812ef2bef5ce850e83dea03efbd00"
   },
   {
    "offset": "0x45F3",
@@ -2552,11 +2527,6 @@
    "offset": "0x567F",
    "text": "翔翼型强袭高达",
    "payload_hex": "eef9ec35e977e8ade9aee812ef2b00"
-  },
-  {
-   "offset": "0x568E",
-   "text": "圣盾高达／解除",
-   "payload_hex": "e90deb63e812ef2be06be89de97400"
   },
   {
    "offset": "0x569D",
@@ -3790,13 +3760,8 @@
   },
   {
    "offset": "0x66CD",
-   "text": "金牛座／SK规格",
-   "payload_hex": "e902ee5febc4efafef9eed1bea42e824"
-  },
-  {
-   "offset": "0x66DE",
-   "text": "灵格斯／BWS",
-   "payload_hex": "eaebe824e7c8e06be009e01a0800"
+   "text": "高达X(卫星炮)",
+   "payload_hex": "e812ef2be01bef5ce9b2ef69e95aefbd00"
   },
   {
    "offset": "0x66EF",
@@ -3805,8 +3770,8 @@
   },
   {
    "offset": "0x66FE",
-   "text": "卡{SLOT:2222}尼Mk2",
-   "payload_hex": "e801e7cee896efa7eedeef5f"
+   "text": "卡{SLOT:2222}尼MKⅡ",
+   "payload_hex": "e801e7cee896efa7ed1beee1"
   },
   {
    "offset": "0x670B",
@@ -3924,11 +3889,6 @@
    "payload_hex": "ea45ec35e813ea94e95a"
   },
   {
-   "offset": "0x681C",
-   "text": "{SLOT:2526}高达／强化",
-   "payload_hex": "e8fee812ef2be06be8ade9a5"
-  },
-  {
    "offset": "0x6829",
    "text": "大型米加粒子炮",
    "payload_hex": "efa5e977e878e854ec84e886e95a"
@@ -3985,13 +3945,8 @@
   },
   {
    "offset": "0x68B4",
-   "text": "卡{SLOT:2222}尼／哈曼机",
-   "payload_hex": "e801e7cee896e06be7e8e874e7e4"
-  },
-  {
-   "offset": "0x68C3",
-   "text": "卡{SLOT:2222}尼／强化",
-   "payload_hex": "e801e7cee896e06be8ade9a5"
+   "text": "V2突击破坏(H)",
+   "payload_hex": "eed8ef5fe8b6e7ccef6de9edef5ce00eefbd00"
   },
   {
    "offset": "0x68D0",
@@ -4070,13 +4025,8 @@
   },
   {
    "offset": "0x6995",
-   "text": "斯摩／金色型",
-   "payload_hex": "e7c8ee35e06be902e89fe977"
-  },
-  {
-   "offset": "0x69A2",
-   "text": "倒X／月光蝶",
-   "payload_hex": "e848e01be06be850e83dea03"
+   "text": "金牛座(SK规格)",
+   "payload_hex": "e902ee5febc4ef5cef9eed1bea42e824efbd00"
   },
   {
    "offset": "0x69AF",
@@ -5075,8 +5025,8 @@
   },
   {
    "offset": "0x8A9B",
-   "text": "∀高达(∀99)",
-   "payload_hex": "e704e812ef2b7de704eca4eca47e"
+   "text": "倒X(月光蝶)",
+   "payload_hex": "e848e01bef5ce850e83dea03efbd00"
   },
   {
    "offset": "0x8AAA",
@@ -5090,8 +5040,8 @@
   },
   {
    "offset": "0x8ABE",
-   "text": "∀高达(月光蝶)",
-   "payload_hex": "e704e812ef2b7de850e83dea037e"
+   "text": "ZZ高达(强化)",
+   "payload_hex": "f65ce812ef2bef5ce8ade9a5efbd00"
   },
   {
    "offset": "0x8ACD",
@@ -5240,13 +5190,8 @@
   },
   {
    "offset": "0x8C01",
-   "text": "V2突击破坏／H",
-   "payload_hex": "eed8ef5fe8b6e7ccef6de9ede06be00e"
-  },
-  {
-   "offset": "0x8C12",
-   "text": "光之翼",
-   "payload_hex": "e83de7cdec35"
+   "text": "迪斯帕达(法夫纳)",
+   "payload_hex": "ea11e7c8eb01ef2bef5ce84ee830e882efbd00"
   },
   {
    "offset": "0x8C19",
@@ -5269,9 +5214,9 @@
    "payload_hex": "efa5e8d8ef4be91ae7eee896e87be856"
   },
   {
-   "offset": "0x8C48",
-   "text": "ZZ高达／强化",
-   "payload_hex": "f65ce812ef2be06be8ade9a50000"
+   "offset": "0x8C47",
+   "text": "Z高达(强化)",
+   "payload_hex": "e01de812ef2bef5ce8ade9a5efbd00"
   },
   {
    "offset": "0x8C57",
@@ -5279,19 +5224,9 @@
    "payload_hex": "efb4e98febdbf65c0000"
   },
   {
-   "offset": "0x8C62",
-   "text": "全装甲ZZ／强化",
-   "payload_hex": "efb4e98febdbf65ce06be8ade9a50000"
-  },
-  {
    "offset": "0x8C73",
    "text": "線土火箭炮",
    "payload_hex": "ef12ec56e8daec32e95a"
-  },
-  {
-   "offset": "0x8C7E",
-   "text": "Z高达／强化",
-   "payload_hex": "e01de812ef2be06be8ade9a5"
   },
   {
    "offset": "0x8C8B",
@@ -5340,8 +5275,8 @@
   },
   {
    "offset": "0x8CED",
-   "text": "Z高达(GD)",
-   "payload_hex": "eedae812ef2b7deed1057e"
+   "text": "光之翼",
+   "payload_hex": "e83de7cdec35"
   },
   {
    "offset": "0x8CF9",
@@ -5370,8 +5305,8 @@
   },
   {
    "offset": "0x8D26",
-   "text": "圣盾高达／解除",
-   "payload_hex": "e90deb63e812ef2be06be89de974"
+   "text": "神高达(强化)",
+   "payload_hex": "e9aae812ef2bef5ce8ade9a5efbd00"
   },
   {
    "offset": "0x8D35",
@@ -5395,8 +5330,8 @@
   },
   {
    "offset": "0x8D55",
-   "text": "W高达零式(EW)",
-   "payload_hex": "e01ae812ef2beb74ea267de00be01a7e"
+   "text": "零式飞翼高达EW",
+   "payload_hex": "eb74ea26ea45ec35e812ef2be00be01a"
   },
   {
    "offset": "0x8D66",
@@ -5410,8 +5345,8 @@
   },
   {
    "offset": "0x8D78",
-   "text": "W高达零式(EW)／H",
-   "payload_hex": "e01ae812ef2beb74ea267de00be01a7ee06beed2"
+   "text": "零式飞翼高达EW(H)",
+   "payload_hex": "eb74ea26ea45ec35e812ef2be00be01a7deed27e"
   },
   {
    "offset": "0x8D8D",
@@ -5685,8 +5620,8 @@
   },
   {
    "offset": "0x8F7F",
-   "text": "高达X／卫星炮",
-   "payload_hex": "e812ef2be01be06be9b2ef69e95a"
+   "text": "斯摩(银色型)",
+   "payload_hex": "e7c8ee35ef5cef7ee89fe977efbd00"
   },
   {
    "offset": "0x8F8E",
@@ -5735,8 +5670,8 @@
   },
   {
    "offset": "0x8FDF",
-   "text": "丘贝雷／普露托机",
-   "payload_hex": "ec46e857e8afefafe838e858e7f4e7e4"
+   "text": "海盗X1(强化)",
+   "payload_hex": "e91be9f3eed9eff7ef5ce8ade9a5efbd00"
   },
   {
    "offset": "0x8FF0",
@@ -6024,11 +5959,6 @@
    "payload_hex": "ef84ead1e9aae8c0000000000000"
   },
   {
-   "offset": "0x920C",
-   "text": "神高达／强化",
-   "payload_hex": "e9aae812ef2be06be8ade9a5"
-  },
-  {
    "offset": "0x9219",
    "text": "量产型卡{SLOT:2222}尼",
    "payload_hex": "e851ec05e977e801e7cee896"
@@ -6050,8 +5980,8 @@
   },
   {
    "offset": "0x9243",
-   "text": "精神感应高达",
-   "payload_hex": "e98de9aae87de873e812ef2b"
+   "text": "精神力高达",
+   "payload_hex": "e98de9aaefb0e812ef2b0000"
   },
   {
    "offset": "0x9250",
@@ -6060,8 +5990,8 @@
   },
   {
    "offset": "0x925B",
-   "text": "精神感应高达MkⅡ",
-   "payload_hex": "e98de9aae87de873e812ef2b07eedeeee1"
+   "text": "精神力高达MKⅡ",
+   "payload_hex": "e98de9aaefb0e812ef2befa7ed1beee10000"
   },
   {
    "offset": "0x926D",
@@ -6205,13 +6135,8 @@
   },
   {
    "offset": "0x93BF",
-   "text": "斯魔／金色型",
-   "payload_hex": "e7c8e8d8efafe902e89fe977"
-  },
-  {
-   "offset": "0x93CC",
-   "text": "热能ヨ",
-   "payload_hex": "ead1e7c6eef1"
+   "text": "赛克艾恩(兵装1)",
+   "payload_hex": "ebf3e7d5e8d6e7eeef5cef93e98feff7efbd00"
   },
   {
    "offset": "0x93D3",
@@ -6220,13 +6145,8 @@
   },
   {
    "offset": "0x93DC",
-   "text": "斯摩／银色型",
-   "payload_hex": "e7c8ee35e06bef7ee89fe977"
-  },
-  {
-   "offset": "0x93E9",
-   "text": "赛克艾恩／重装1",
-   "payload_hex": "ebf3e7d5e8d6e7eeefafe8a1e98feff7"
+   "text": "全装甲ZZ(强化)",
+   "payload_hex": "efb4e98febdbf65cef5ce8ade9a5efbd00"
   },
   {
    "offset": "0x93FA",
@@ -6240,8 +6160,8 @@
   },
   {
    "offset": "0x9405",
-   "text": "赛克艾恩／重装2",
-   "payload_hex": "ebf3e7d5e8d6e7eeefafe8a1e98fef5f"
+   "text": "海盗X1改(H)",
+   "payload_hex": "e91be9f3eed9eff7e9f0ef5ce00eefbd00"
   },
   {
    "offset": "0x9416",
@@ -6275,8 +6195,8 @@
   },
   {
    "offset": "0x9457",
-   "text": "TurnX月光蝶",
-   "payload_hex": "eed6ef7feedfef80eed9e850e83dea03"
+   "text": "圣盾高达(解除)",
+   "payload_hex": "e90deb63e812ef2bef5ce89de974efbd00"
   },
   {
    "offset": "0x9468",
