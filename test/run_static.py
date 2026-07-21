@@ -45,7 +45,7 @@ in-game failure the gate protects against.
   field_width_budgets         box-title overflow / heap-garbage titles on the ID screens
   assignment_unit_name_budget 配属 unit names wider than its exact 120px reservation
   label_render_consistency    mixed-size "floating" glyphs in one label list
-  unit_weapon_names           unit/weapon name garbage or coverage regression
+  unit_weapon_names           unit/weapon name garbage, valid-string swap, or coverage regression
   id_command_names            ID-command name/summary/detail garbage or coverage loss
   name_pointer_band           the 出击/deploy HARD-FREEZE from a unit/pilot name ptr >= 0x02190000
   effect_line_stops           special-box record bleed (duplicate/phantom ability lines)
@@ -2683,7 +2683,10 @@ def _scan_name_string(a9, foff, atlas_n, depth=0):
 
 def gate_unit_weapon_names(rep, ctx, update=False):
     """The per-unit master table feeds EVERY in-battle unit + weapon name.  Two
-    teeth: (1) zero garbage (an out-of-atlas token = on-screen sparkle); (2) the
+    teeth: (1) zero garbage (an out-of-atlas token = on-screen sparkle); (2) each
+    live pointer must render the exact name annotated in data/zh/units.json, so a
+    valid Chinese string planted across another live name cannot silently swap
+    identities (the v1.3 W高达零式(EW) -> 翔翼型强袭(解除) overlap class); (3) the
     count of translated (changed-vs-JP) names must never drop below the baseline
     floor (a name reverting to Japanese fails the build)."""
     aj, az = ctx["jp_a9"], ctx["a9"]
@@ -2722,6 +2725,48 @@ def gate_unit_weapon_names(rep, ctx, update=False):
                 oslots, _ = _scan_name_string(aj, _ram_to_file(aj, pj) or f, atlas_n)
                 cls = "JP" if any(s in cm.kana_slots for s in oslots) else "SHARED"
             store[p] = cls
+
+    # A syntactically valid Chinese string can still be the WRONG Chinese
+    # string when one relocation starts before another live pointer.  The
+    # garbage/coverage teeth above cannot see that class, so compare every
+    # semantic record against what its candidate pointer actually renders.
+    rb_doc = json.loads((REPO / "data" / "renderb_charset.json").read_text())
+    renderb = {int(k): v.get("char") for k, v in rb_doc.get("slots", {}).items()
+               if isinstance(v, dict) and v.get("char")}
+    cm_doc = json.loads(CHARMAP_PATH.read_text())
+    atlas = dict(cm.zh_rev)
+    atlas.update({int(k): v for k, v in cm_doc.get("slot_chars_extra", {}).items()})
+
+    def rendered_name(slots):
+        return "".join((atlas.get(s) if s >= ZH_SLOT_MIN else renderb.get(s))
+                       or f"{{SLOT:{s}}}" for s in slots)
+
+    def name_equiv(s):
+        # units.json uses ASCII parens/case while original renderB bytes retain
+        # visually equivalent JP-width forms in a few proven names.
+        return s.translate(str.maketrans({"（": "(", "）": ")",
+                                         "ー": "-", "－": "-"})).casefold()
+
+    identity_mismatch = []
+    spec = json.loads((REPO / "data" / "zh" / "units.json").read_text())
+    for unit in spec["units"]:
+        utid = unit["utid"]
+        ro = MASTER_TABLE_OFF + utid * MASTER_STRIDE
+        checks = [("unit", MASTER_NAME_OFF, unit)]
+        checks += [("weapon", MASTER_WPN_OFF + w["slot"] * MASTER_WPN_STRIDE, w)
+                   for w in unit.get("weapons", [])]
+        for kind, off, expected in checks:
+            p = struct.unpack_from("<I", az, ro + off)[0]
+            f = _ram_to_file(az, p)
+            if f is None or az[f] == 0:
+                continue
+            slots, issues = _scan_name_string(az, f, atlas_n)
+            if issues:
+                continue                    # reported by the garbage tooth
+            got, want = rendered_name(slots), expected["zh"]
+            if name_equiv(got) != name_equiv(want):
+                identity_mismatch.append((kind, utid, expected.get("slot"),
+                                          p, want, got))
     zh_u = sum(1 for c in units.values() if c == "ZH")
     zh_w = sum(1 for c in weapons.values() if c == "ZH")
     jp_u = sum(1 for c in units.values() if c == "JP")
@@ -2734,6 +2779,11 @@ def gate_unit_weapon_names(rep, ctx, update=False):
     fails = []
     if garbage:
         fails.append(f"{len(garbage)} GARBAGE name string(s), e.g. {garbage[0]}")
+    if identity_mismatch:
+        kind, utid, slot, p, want, got = identity_mismatch[0]
+        fails.append(f"{len(identity_mismatch)} valid-string identity mismatch(es), "
+                     f"e.g. {kind} utid{utid} slot{slot} @{p:#x}: "
+                     f"want {want!r}, rendered {got!r}")
     if not update and base:
         if zh_u < base.get("min_zh_units", 0):
             fails.append(f"ZH unit names regressed: {zh_u} < baseline {base['min_zh_units']}")
@@ -2744,7 +2794,7 @@ def gate_unit_weapon_names(rep, ctx, update=False):
     else:
         rep.add("unit_weapon_names", True,
                 f"{N} master records: {zh_u} ZH units / {zh_w} ZH weapons "
-                f"({jp_u}/{jp_w} still-JP), 0 garbage"
+                f"({jp_u}/{jp_w} still-JP), 0 garbage, 0 identity mismatches"
                 + (" [baseline captured]" if update else ""))
 
 
@@ -4172,6 +4222,19 @@ def self_test(rom_path: Path, jp_path: Path) -> int:
                 ["name_pointer_band"],
                 lambda c: mut_a9(c, MASTER_TABLE_OFF + 184 * MASTER_STRIDE + MASTER_NAME_OFF,
                                  struct.pack("<I", 0x02190663)))
+
+    def mut_valid_unit_name_swap(ctx):
+        a = bytearray(ctx["a9"])
+        donor = struct.unpack_from(
+            "<I", a, MASTER_TABLE_OFF + 100 * MASTER_STRIDE + MASTER_NAME_OFF
+        )[0]                              # 翔翼型强袭(解除), valid Chinese
+        struct.pack_into(
+            "<I", a, MASTER_TABLE_OFF + 88 * MASTER_STRIDE + MASTER_NAME_OFF, donor
+        )                                 # W高达零式(EW) silently becomes donor
+        ctx["a9"] = bytes(a)
+
+    expect_fail("point W高达零式(EW) at another valid Chinese unit name",
+                ["unit_weapon_names"], mut_valid_unit_name_swap)
     expect_fail("relocate a pilot name into pool A (blank nameplate)",
                 ["name_pointer_band"],
                 lambda c: mut_a9(c, CHAR_DB_OFF + 419 * CHAR_DB_STRIDE + 4,

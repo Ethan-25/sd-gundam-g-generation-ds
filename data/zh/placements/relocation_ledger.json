@@ -7477,6 +7477,742 @@
    "reserved": 5,
    "vacated": [],
    "note": "Move the grown 5-byte UI label into a heap-safe UI-bank gap; the previous target 0x214BD91 is unit-thumbnail pixel data, not a reusable text span"
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:retire-original-spans",
+   "ids": [],
+   "text": null,
+   "pool": null,
+   "offset": null,
+   "ram": null,
+   "bytes": 0,
+   "reserved": 0,
+   "vacated": [
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x44D3",
+     "span": 16,
+     "ram": "0x218A4D3"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x44E4",
+     "span": 16,
+     "ram": "0x218A4E4"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8C01",
+     "span": 17,
+     "ram": "0x218EC01"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8C48",
+     "span": 14,
+     "ram": "0x218EC48"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8C62",
+     "span": 16,
+     "ram": "0x218EC62"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8C7E",
+     "span": 13,
+     "ram": "0x218EC7E"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x681C",
+     "span": 13,
+     "ram": "0x218C81C"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x4511",
+     "span": 14,
+     "ram": "0x218A511"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x568E",
+     "span": 15,
+     "ram": "0x218B68E"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x4533",
+     "span": 15,
+     "ram": "0x218A533"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x36D3",
+     "span": 17,
+     "ram": "0x21896D3"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x36E4",
+     "span": 17,
+     "ram": "0x21896E4"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8F7F",
+     "span": 15,
+     "ram": "0x218EF7F"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x68B4",
+     "span": 15,
+     "ram": "0x218C8B4"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x68C3",
+     "span": 13,
+     "ram": "0x218C8C3"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x459B",
+     "span": 15,
+     "ram": "0x218A59B"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x45B9",
+     "span": 15,
+     "ram": "0x218A5B9"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x920C",
+     "span": 13,
+     "ram": "0x218F20C"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x45E2",
+     "span": 17,
+     "ram": "0x218A5E2"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x6995",
+     "span": 13,
+     "ram": "0x218C995"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x93DC",
+     "span": 13,
+     "ram": "0x218F3DC"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x36F5",
+     "span": 17,
+     "ram": "0x21896F5"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x3706",
+     "span": 17,
+     "ram": "0x2189706"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x69A2",
+     "span": 13,
+     "ram": "0x218C9A2"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x37EB",
+     "span": 17,
+     "ram": "0x21897EB"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x66CD",
+     "span": 17,
+     "ram": "0x218C6CD"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x4482",
+     "span": 14,
+     "ram": "0x218A482"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x66DE",
+     "span": 14,
+     "ram": "0x218C6DE"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x3E16",
+     "span": 15,
+     "ram": "0x2189E16"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x3A3C",
+     "span": 13,
+     "ram": "0x2189A3C",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x3CB1",
+     "span": 20,
+     "ram": "0x2189CB1",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x4491",
+     "span": 17,
+     "ram": "0x218A491",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8A9B",
+     "span": 15,
+     "ram": "0x218EA9B",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8ABE",
+     "span": 15,
+     "ram": "0x218EABE",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8CED",
+     "span": 12,
+     "ram": "0x218ECED",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8D26",
+     "span": 15,
+     "ram": "0x218ED26",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8FDF",
+     "span": 17,
+     "ram": "0x218EFDF",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x906D",
+     "span": 14,
+     "ram": "0x218F06D",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x909B",
+     "span": 14,
+     "ram": "0x218F09B",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x93BF",
+     "span": 13,
+     "ram": "0x218F3BF",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x93E9",
+     "span": 17,
+     "ram": "0x218F3E9",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x9405",
+     "span": 17,
+     "ram": "0x218F405",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    },
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x9457",
+     "span": 17,
+     "ram": "0x218F457",
+     "proof": "duplicate legacy unit-name placement; 0 referrers in whole-arm9 aligned+unaligned pointer scan; every byte passes bark_map_row_liveness"
+    }
+   ]
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x21896D3",
+   "ids": [
+    100,
+    101,
+    102
+   ],
+   "text": "翔翼型强袭(解除)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x36D3",
+   "ram": "0x21896D3",
+   "bytes": 18,
+   "reserved": 19,
+   "note": "v1.3 adaptation: 0x218ED55 is now live 零式飞翼高达EW; reuse the original 翔翼型强袭／解除 home after the following three unit names were relocated"
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x21896F5",
+   "ids": [
+    352,
+    353,
+    354
+   ],
+   "text": "赛克艾恩(兵装1)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x93BF",
+   "ram": "0x218F3BF",
+   "bytes": 18,
+   "reserved": 19
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x2189706",
+   "ids": [
+    355,
+    356,
+    357
+   ],
+   "text": "赛克艾恩(兵装2)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x3CB1",
+   "ram": "0x2189CB1",
+   "bytes": 18,
+   "reserved": 19
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x21897EB",
+   "ids": [
+    382,
+    383,
+    384
+   ],
+   "text": "迪斯帕达(法夫纳)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8C01",
+   "ram": "0x218EC01",
+   "bytes": 18,
+   "reserved": 19,
+   "note": "v1.3 adaptation: 0x218ED78 is now live 零式飞翼高达EW(H); use the V2-name span plus the vacated 光之翼 tail instead"
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218A5E2",
+   "ids": [
+    313,
+    314,
+    315
+   ],
+   "text": "西斯库德(形态1)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x44CD",
+   "ram": "0x218A4CD",
+   "bytes": 18,
+   "reserved": 19
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218C6CD",
+   "ids": [
+    400,
+    401,
+    402
+   ],
+   "text": "金牛座(SK规格)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x6995",
+   "ram": "0x218C995",
+   "bytes": 18,
+   "reserved": 19
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218EC01",
+   "ids": [
+    37,
+    38,
+    39
+   ],
+   "text": "V2突击破坏(H)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x68B4",
+   "ram": "0x218C8B4",
+   "bytes": 18,
+   "reserved": 19
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x2189E16",
+   "ids": [
+    544,
+    545,
+    546
+   ],
+   "text": "嫣红强袭(解除)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x37EB",
+   "ram": "0x21897EB",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218A4D3",
+   "ids": [
+    4,
+    5,
+    6
+   ],
+   "text": "∀高达(∀99)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x4491",
+   "ram": "0x218A491",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218A4E4",
+   "ids": [
+    7,
+    8,
+    9
+   ],
+   "text": "∀高达(月光蝶)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x45E2",
+   "ram": "0x218A5E2",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218A59B",
+   "ids": [
+    202,
+    203,
+    204
+   ],
+   "text": "海盗X1(强化)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8FDF",
+   "ram": "0x218EFDF",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218A5B9",
+   "ids": [
+    208,
+    209,
+    210
+   ],
+   "text": "海盗X1改(H)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x9405",
+   "ram": "0x218F405",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218B68E",
+   "ids": [
+    82,
+    83,
+    84
+   ],
+   "text": "圣盾高达(解除)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x9457",
+   "ram": "0x218F457",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218C8B4",
+   "ids": [
+    178,
+    179,
+    180
+   ],
+   "text": "卡碧尼(哈曼机)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x3E16",
+   "ram": "0x2189E16",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218EC62",
+   "ids": [
+    49,
+    50,
+    51
+   ],
+   "text": "全装甲ZZ(强化)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x93DC",
+   "ram": "0x218F3DC",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218EF7F",
+   "ids": [
+    166,
+    167,
+    168
+   ],
+   "text": "高达X(卫星炮)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x66CD",
+   "ram": "0x218C6CD",
+   "bytes": 16,
+   "reserved": 17
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x21896E4",
+   "ids": [
+    145,
+    146,
+    147
+   ],
+   "text": "MC高达(半毁)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x44E4",
+   "ram": "0x218A4E4",
+   "bytes": 15,
+   "reserved": 16
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218C6DE",
+   "ids": [
+    517,
+    518,
+    519
+   ],
+   "text": "灵格斯(BWS)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x4532",
+   "ram": "0x218A532",
+   "bytes": 15,
+   "reserved": 16
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218C81C",
+   "ids": [
+    64,
+    65,
+    66
+   ],
+   "text": "ν高达(强化)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x3A3A",
+   "ram": "0x2189A3A",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218C8C3",
+   "ids": [
+    181,
+    182,
+    183
+   ],
+   "text": "卡碧尼(强化)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x459B",
+   "ram": "0x218A59B",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218C995",
+   "ids": [
+    346,
+    347,
+    348
+   ],
+   "text": "斯摩(金色型)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x45B9",
+   "ram": "0x218A5B9",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218C9A2",
+   "ids": [
+    364,
+    365,
+    366,
+    370,
+    371,
+    372
+   ],
+   "text": "倒X(月光蝶)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8A9B",
+   "ram": "0x218EA9B",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218EC48",
+   "ids": [
+    43,
+    44,
+    45
+   ],
+   "text": "ZZ高达(强化)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8ABE",
+   "ram": "0x218EABE",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218EC7E",
+   "ids": [
+    55,
+    56,
+    57
+   ],
+   "text": "Z高达(强化)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8C47",
+   "ram": "0x218EC47",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218F20C",
+   "ids": [
+    256,
+    257,
+    258,
+    262,
+    263,
+    264
+   ],
+   "text": "神高达(强化)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8D26",
+   "ram": "0x218ED26",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218F3DC",
+   "ids": [
+    349,
+    350,
+    351
+   ],
+   "text": "斯摩(银色型)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8F7F",
+   "ram": "0x218EF7F",
+   "bytes": 14,
+   "reserved": 15
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218A511",
+   "ids": [
+    70,
+    71,
+    72
+   ],
+   "text": "Z高达(GD)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x3B7C",
+   "ram": "0x2189B7C",
+   "bytes": 13,
+   "reserved": 14
+  },
+  {
+   "date": "2026-07-20",
+   "fix": "unit-narrow-parens:0x218A482",
+   "ids": [
+    478,
+    479,
+    480,
+    484,
+    485,
+    486
+   ],
+   "text": "自由(SEED)",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x3A16",
+   "ram": "0x2189A16",
+   "bytes": 10,
+   "reserved": 11
+  },
+  {
+   "date": "2026-07-22",
+   "fix": "unit-narrow-parens:v13-lightwing-relocation",
+   "ids": [],
+   "text": "光之翼",
+   "pool": "data/zh/placements/resident_caves.json",
+   "offset": "0x8CED",
+   "ram": "0x218ECED",
+   "bytes": 6,
+   "reserved": 7,
+   "vacated": [
+    {
+     "pool": "data/zh/placements/resident_caves.json",
+     "offset": "0x8C12",
+     "span": 6,
+     "ram": "0x218EC12"
+    }
+   ],
+   "note": "v1.3 adaptation: relocate 光之翼 so 0x218EC01 has the 19-byte reserved span required by 迪斯帕达(法夫纳); 0x8CED was a reference-free duplicate span proven safe by the old ledger"
   }
  ]
 }
