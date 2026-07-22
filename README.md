@@ -23,7 +23,7 @@
 
 > 机体、武器、驾驶员、战斗、剧情、图鉴与界面——**全流程汉化**，构建结果按哈希逐项校验、可复现。
 
-## 个人更新
+## 1.4.1 个人更新
 
 修正机体名称的显示宽度与格式问题：部分较长机体名此前使用全角 `／` 或全角
 `（）` 连接变体后缀，在机体列表等窄列宽场景下容易挤占显示空间、造成换行
@@ -45,21 +45,21 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="figs/v1.3-name-spirit-mkii.png" alt="v1.3：精神力高达 MKⅡ 译名订正"><br>
+      <img src="figs/v1.3-name-spirit-mkii.png" alt="1.4.1：精神力高达 MKⅡ 译名订正"><br>
       <sub><b>精神感应高达 → 精神力高达</b><br>系列译名订正（含 MKⅡ 形态）</sub>
     </td>
     <td align="center" width="50%">
-      <img src="figs/v1.3-name-zero-ew.png" alt="v1.3：零式飞翼高达EW 译名订正"><br>
+      <img src="figs/v1.3-name-zero-ew.png" alt="1.4.1：零式飞翼高达EW 译名订正"><br>
       <sub><b>W高达零式(EW) → 零式飞翼高达EW</b><br>与其它零式变体区分</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="figs/v1.3-name-bws-parens.png" alt="v1.3：灵格斯(BWS) 半角括号格式统一"><br>
+      <img src="figs/v1.3-name-bws-parens.png" alt="1.4.1：灵格斯(BWS) 半角括号格式统一"><br>
       <sub><b>灵格斯／BWS → 灵格斯(BWS)</b><br>变体后缀改用半角括号，列表单行显示</sub>
     </td>
     <td align="center" width="50%">
-      <img src="figs/v1.3-name-silver-parens.png" alt="v1.3：斯摩(银色型) 半角括号格式统一"><br>
+      <img src="figs/v1.3-name-silver-parens.png" alt="1.4.1：斯摩(银色型) 半角括号格式统一"><br>
       <sub><b>斯摩／银色型 → 斯摩(银色型)</b><br>变体后缀改用半角括号，列表单行显示</sub>
     </td>
   </tr>
@@ -178,12 +178,12 @@ python3 -m venv .venv
 预期输出：
 
 ```
-[build] final ROM sha1 38da86c90765eb2ec5dfcde0f27df4b923e3bfcc  (MATCHES the shipped translation)
+[build] final ROM sha1 1b7b5595f76bf64824daafbd16d4053ff6b5b82d  (MATCHES the shipped translation)
 [build] wrote sd-gundam-g-generation-zh.nds  (30,359,400 bytes)
 ```
 
 追加 `--pad32m 路径` 可同时输出补齐到 32 MiB 的镜像（部分烧录卡要求 2 的幂
-大小；sha1 `39acd1baee6b65e2ef8a2408a117f569e66a45db`）。
+大小；sha1 `28a82c4aa24f868a6b38e8f84c5f04cc838b2afe`）。
 
 输入必须是 sha1 为 `12443b91297a57bcd2ace8da989c26ae635a79fd`（33,554,432
 字节）的日版卡带镜像——构建会校验它以及 `data/manifest.json` 中记录的每个
